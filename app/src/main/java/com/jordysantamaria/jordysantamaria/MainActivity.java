@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //Forzar y cargar icono en el action bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_myicon);
+
         btn = (Button) findViewById(R.id.btnOprimeme);
 
         btn.setOnClickListener(new View.OnClickListener(){

@@ -14,6 +14,12 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //Forzar y cargar icono en el action bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_myicon);
+
         textView = (TextView) findViewById(R.id.textViewMain);
 
         Bundle bundle = getIntent().getExtras();
